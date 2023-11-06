@@ -1,0 +1,20 @@
+[nagios_centos]
+192.168.56.108 ansible_python_interpreter=/usr/bin/python
+
+[elk_centos]
+192.168.56.108 ansible_python_interpreter=/usr/bin/python
+
+[elk_ubuntu]
+192.168.56.103 ansible_python_interpreter=/usr/bin/python3
+
+[igp_centos]
+192.168.56.108 ansible_python_interpreter=/usr/bin/python
+
+[igp_ubuntu]
+192.168.56.103 ansible_python_interpreter=/usr/bin/python3
+
+[ls_centos]
+192.168.56.108 ansible_python_interpreter=/usr/bin/python
+
+[ls_ubuntu]
+192.168.56.103 ansible_python_interpreter=/usr/bin/python3

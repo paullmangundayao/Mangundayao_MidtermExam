@@ -1,0 +1,38 @@
+---
+- name: Install Java
+  yum:
+    name: java-1.8.0-openjdk
+    state: present
+
+- name: Install Elasticsearch
+  yum:
+    name: elasticsearch
+    state: present
+
+- name: Start and enable Elasticsearch service
+  service:
+    name: elasticsearch
+    state: started
+    enabled: yes
+
+- name: Install Kibana
+  yum:
+    name: kibana
+    state: present
+
+- name: Start and enable Kibana service
+  service:
+    name: kibana
+    state: started
+    enabled: yes
+
+- name: Install Logstash
+  yum:
+    name: logstash
+    state: present
+
+- name: Start and enable Logstash service
+  service:
+    name: logstash
+    state: started
+    enabled: yes
